@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137836003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0703, y: -0.0025, z: 0}
+  m_LocalPosition: {x: -0.0703, y: -0.0025, z: 5}
   m_LocalScale: {x: 3.6258028, y: 2.4293098, z: 2.0993}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -291,6 +292,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be74560457f376948894dee111b5529f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: 0
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.07382611
+      outSlope: 0.07382611
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.2231197
+    - serializedVersion: 3
+      time: 0.481124
+      value: 0.16724278
+      inSlope: -0.07033616
+      outSlope: -0.07033616
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.32068402
+    - serializedVersion: 3
+      time: 1.0375061
+      value: -0.0017089844
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  duration: 0.2
 --- !u!1 &658321690
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 51346050315769797, guid: b9965811035b4dc41aa28ce400ac0843, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.18
+      value: 9.39
       objectReference: {fileID: 0}
     - target: {fileID: 51346050315769797, guid: b9965811035b4dc41aa28ce400ac0843, type: 3}
       propertyPath: m_LocalPosition.z
